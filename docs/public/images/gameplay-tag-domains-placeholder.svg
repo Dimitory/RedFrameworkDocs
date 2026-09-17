@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="Screenshot placeholder for separate gameplay tag domains">
+  <rect width="1200" height="675" fill="#17181c"/><rect x="70" y="65" width="500" height="545" rx="18" fill="#25272c" stroke="#555963" stroke-width="3"/><rect x="630" y="65" width="500" height="545" rx="18" fill="#25272c" stroke="#555963" stroke-width="3"/>
+  <text x="320" y="145" text-anchor="middle" fill="#f4f4f5" font-family="system-ui" font-size="32" font-weight="700">DamageTypeTag</text><text x="880" y="145" text-anchor="middle" fill="#f4f4f5" font-family="system-ui" font-size="32" font-weight="700">FactionTag</text>
+  <g fill="#34373e"><rect x="130" y="200" width="380" height="60" rx="9"/><rect x="130" y="285" width="380" height="60" rx="9"/><rect x="690" y="200" width="380" height="60" rx="9"/><rect x="690" y="285" width="380" height="60" rx="9"/></g>
+  <text x="600" y="525" text-anchor="middle" fill="#adb1bb" font-family="system-ui" font-size="23">Show both serialized domains and their different metadata</text>
+</svg>

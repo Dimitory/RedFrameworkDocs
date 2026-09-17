@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="Diagram placeholder for ability activation">
+  <rect width="1200" height="675" fill="#17181c"/><text x="600" y="105" text-anchor="middle" fill="#f4f4f5" font-family="system-ui" font-size="38" font-weight="700">Ability activation</text>
+  <g fill="#292c32" stroke="#626773" stroke-width="2"><rect x="55" y="265" width="170" height="90" rx="14"/><rect x="285" y="265" width="170" height="90" rx="14"/><rect x="515" y="265" width="170" height="90" rx="14"/><rect x="745" y="265" width="170" height="90" rx="14"/><rect x="975" y="265" width="170" height="90" rx="14"/></g>
+  <g fill="#f4f4f5" font-family="system-ui" font-size="20" text-anchor="middle"><text x="140" y="318">Input</text><text x="370" y="318">CanActivate</text><text x="600" y="318">Commit</text><text x="830" y="318">Tick routine</text><text x="1060" y="318">Finish</text></g>
+  <g stroke="#b4242d" stroke-width="7"><path d="M230 310h50"/><path d="M460 310h50"/><path d="M690 310h50"/><path d="M920 310h50"/></g>
+</svg>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="Screenshot placeholder for the RedEngine Welcome window">
+  <rect width="1200" height="675" fill="#17181c"/><rect x="64" y="54" width="1072" height="567" rx="18" fill="#24262b" stroke="#4b4e56" stroke-width="3"/>
+  <rect x="64" y="54" width="1072" height="58" rx="18" fill="#303239"/><circle cx="100" cy="83" r="10" fill="#b4242d"/>
+  <text x="600" y="285" text-anchor="middle" fill="#f3f3f4" font-family="system-ui,sans-serif" font-size="38" font-weight="700">Screenshot: RedEngine Welcome</text>
+  <text x="600" y="340" text-anchor="middle" fill="#aeb1ba" font-family="system-ui,sans-serif" font-size="24">Show settings status, useful links, and sample access</text>
+  <rect x="408" y="390" width="384" height="60" rx="12" fill="#b4242d"/><text x="600" y="428" text-anchor="middle" fill="white" font-family="system-ui,sans-serif" font-size="21">Replace this SVG when ready</text>
+</svg>

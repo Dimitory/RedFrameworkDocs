@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="Screenshot placeholder for the GE Burning effect inspector">
+  <rect width="1200" height="675" fill="#17181c"/><rect x="220" y="45" width="760" height="585" rx="18" fill="#25272c" stroke="#555963" stroke-width="3"/>
+  <text x="600" y="125" text-anchor="middle" fill="#f4f4f5" font-family="system-ui" font-size="36" font-weight="700">Screenshot: GE_Burning</text>
+  <g fill="#34373e"><rect x="290" y="175" width="620" height="54" rx="8"/><rect x="290" y="248" width="620" height="54" rx="8"/><rect x="290" y="321" width="620" height="54" rx="8"/><rect x="290" y="394" width="620" height="54" rx="8"/></g>
+  <text x="600" y="525" text-anchor="middle" fill="#adb1bb" font-family="system-ui" font-size="23">Show duration, period, stacking, damage, and impulse</text>
+</svg>

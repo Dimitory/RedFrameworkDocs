@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="Diagram placeholder for attribute formula dependencies">
+  <rect width="1200" height="675" fill="#17181c"/><text x="600" y="110" text-anchor="middle" fill="#f4f4f5" font-family="system-ui" font-size="38" font-weight="700">Attribute dependencies</text>
+  <g fill="#292c32" stroke="#626773" stroke-width="2"><rect x="110" y="245" width="240" height="105" rx="15"/><rect x="110" y="410" width="240" height="105" rx="15"/><rect x="700" y="320" width="350" height="120" rx="15"/></g>
+  <g fill="#f4f4f5" font-family="system-ui" font-size="24" text-anchor="middle"><text x="230" y="307">Strength</text><text x="230" y="472">Weapon Damage</text><text x="875" y="374">AttackPowerFormula</text><text x="875" y="406">Derived result</text></g>
+  <g stroke="#b4242d" stroke-width="7" fill="none"><path d="M355 297C520 297 530 350 692 365"/><path d="M355 462C520 462 530 415 692 395"/></g>
+</svg>

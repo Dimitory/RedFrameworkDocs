@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="Screenshot placeholder for input settings">
+  <rect width="1200" height="675" fill="#17181c"/><rect x="60" y="54" width="510" height="567" rx="18" fill="#24262b" stroke="#4b4e56" stroke-width="3"/><rect x="630" y="54" width="510" height="567" rx="18" fill="#24262b" stroke="#4b4e56" stroke-width="3"/>
+  <text x="315" y="160" text-anchor="middle" fill="#f3f3f4" font-family="system-ui,sans-serif" font-size="32" font-weight="700">InputSettings</text><text x="885" y="160" text-anchor="middle" fill="#f3f3f4" font-family="system-ui,sans-serif" font-size="32" font-weight="700">InputContext</text>
+  <g fill="#303239"><rect x="120" y="215" width="390" height="55" rx="8"/><rect x="120" y="295" width="390" height="55" rx="8"/><rect x="690" y="215" width="390" height="55" rx="8"/><rect x="690" y="295" width="390" height="55" rx="8"/></g>
+  <text x="600" y="545" text-anchor="middle" fill="#aeb1ba" font-family="system-ui,sans-serif" font-size="23">Capture both inspectors with one matching action highlighted</text>
+</svg>

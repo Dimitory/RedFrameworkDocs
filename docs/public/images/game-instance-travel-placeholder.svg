@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="Diagram placeholder for Bootstrap and Travel">
+  <rect width="1200" height="675" fill="#17181c"/><text x="600" y="105" text-anchor="middle" fill="#f4f4f5" font-family="system-ui" font-size="38" font-weight="700">Bootstrap → GameInstance → Travel</text>
+  <g fill="#292c32" stroke="#626773" stroke-width="2"><rect x="90" y="245" width="220" height="110" rx="14"/><rect x="365" y="245" width="220" height="110" rx="14"/><rect x="640" y="245" width="220" height="110" rx="14"/><rect x="915" y="245" width="220" height="110" rx="14"/></g>
+  <g fill="#f4f4f5" font-family="system-ui" font-size="21" text-anchor="middle"><text x="200" y="310">ContentManager</text><text x="475" y="310">GameInstance</text><text x="750" y="310">Fusion runner</text><text x="1025" y="310">World ready</text></g>
+  <g stroke="#b4242d" stroke-width="7"><path d="M315 300h45"/><path d="M590 300h45"/><path d="M865 300h45"/></g><text x="600" y="475" text-anchor="middle" fill="#adb1bb" font-family="system-ui" font-size="23">Capture startup settings beside the finished flow</text>
+</svg>

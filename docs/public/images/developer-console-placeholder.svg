@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="Screenshot placeholder for developer console">
+  <rect width="1200" height="675" fill="#0e0f12"/><rect x="55" y="45" width="1090" height="585" rx="16" fill="#17191e" stroke="#555963" stroke-width="3"/>
+  <g fill="#8f949f" font-family="ui-monospace,monospace" font-size="20"><text x="95" y="120">[Info] [Gameplay.Combat] Damage subsystem ready</text><text x="95" y="160">[Warning] [ContentManager] Bundle is still loading</text><text x="95" y="200">[Error] [Abilities] Activation rejected by Cost</text></g>
+  <rect x="85" y="495" width="1030" height="72" rx="9" fill="#24272e"/><text x="110" y="540" fill="#f4f4f5" font-family="ui-monospace,monospace" font-size="24">&gt; player.kick Demo</text><text x="110" y="600" fill="#777d88" font-family="ui-monospace,monospace" font-size="20">Suggestion: DemoPlayer</text>
+</svg>

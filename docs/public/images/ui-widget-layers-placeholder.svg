@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="Diagram placeholder for UI widget layers">
+  <rect width="1200" height="675" fill="#17181c"/><text x="600" y="90" text-anchor="middle" fill="#f4f4f5" font-family="system-ui" font-size="38" font-weight="700">Widget layers</text>
+  <rect x="100" y="135" width="1000" height="470" rx="20" fill="#24262b" stroke="#555963" stroke-width="3"/><rect x="170" y="205" width="860" height="330" rx="18" fill="#2d3036" stroke="#666b76"/><rect x="275" y="270" width="650" height="205" rx="18" fill="#373a42" stroke="#b4242d" stroke-width="3"/><rect x="410" y="325" width="380" height="95" rx="16" fill="#b4242d"/>
+  <g fill="#f4f4f5" font-family="system-ui" font-size="22" text-anchor="middle"><text x="600" y="175">WidgetLayer / persistent canvas</text><text x="600" y="245">Screen stack</text><text x="600" y="305">Windows</text><text x="600" y="382">Notification / system overlay</text></g>
+</svg>

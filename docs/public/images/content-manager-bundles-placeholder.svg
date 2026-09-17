@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="Diagram placeholder for ContentManager AssetBundles">
+  <rect width="1200" height="675" fill="#17181c"/><text x="600" y="105" text-anchor="middle" fill="#f4f4f5" font-family="system-ui" font-size="38" font-weight="700">AssetBundle content pipeline</text>
+  <g fill="#292c32" stroke="#626773" stroke-width="2"><rect x="70" y="260" width="220" height="100" rx="14"/><rect x="350" y="260" width="220" height="100" rx="14"/><rect x="630" y="260" width="220" height="100" rx="14"/><rect x="910" y="260" width="220" height="100" rx="14"/></g>
+  <g fill="#f4f4f5" font-family="system-ui" font-size="21" text-anchor="middle"><text x="180" y="317">Platform manifest</text><text x="460" y="317">Dependencies</text><text x="740" y="317">Mount bundle</text><text x="1020" y="317">Preload assets</text></g>
+  <g stroke="#b4242d" stroke-width="7"><path d="M295 310h50"/><path d="M575 310h50"/><path d="M855 310h50"/></g>
+</svg>
