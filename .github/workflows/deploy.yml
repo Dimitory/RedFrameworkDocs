@@ -27,6 +27,14 @@ jobs:
         with:
           node-version: 24
           cache: npm
+          
+      - name: Cache VitePress
+        uses: actions/cache@v4
+        with:
+          path: docs/.vitepress/cache
+          key: ${{ runner.os }}-vitepress-${{ hashFiles('docs/**', 'package-lock.json', 'pnpm-lock.yaml', 'yarn.lock', 'bun.lockb') }}
+          restore-keys: |
+            ${{ runner.os }}-vitepress-
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
@@ -49,8 +57,9 @@ jobs:
 
     needs: build
     runs-on: ubuntu-latest
+    name: Deploy
 
     steps:
-      - name: Deploy
+      - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4

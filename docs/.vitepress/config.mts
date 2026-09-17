@@ -6,6 +6,7 @@ export default defineConfig({
   cleanUrls: true,
   lastUpdated: true,
   ignoreDeadLinks: false,
+  base: '/RedFrameworkDocs/',
   head: [
     ['meta', { name: 'theme-color', content: '#b4242d' }],
   ],
