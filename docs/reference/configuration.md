@@ -1,12 +1,14 @@
 # Configuration
 
-RedEngine configuration is composed from module-owned ScriptableObject sections and one default
+RedEngine configuration consists of module-owned ScriptableObject sections within a default
 application settings asset.
 
 ## EngineSettings
 
-Keep one default `EngineSettings` at `Assets/Resources/EngineSettings.asset`. The root asset only owns
-explicitly selected module sections; it does not duplicate their fields.
+Keep one active `EngineSettings` in a `Resources` folder. The Compact Showcase includes
+`Content/Resources/ShowcaseEngineSettings.asset`; a project's `Assets/Resources/EngineSettings.asset`
+takes precedence when present. Open the active asset with **Tools > RedEngine > Engine Settings**.
+The asset only owns explicitly selected module sections; it does not duplicate their fields.
 
 ```csharp
 EngineSettings? settings =

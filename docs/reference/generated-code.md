@@ -1,7 +1,7 @@
 # Generated Code
 
-RedEngine source generators turn concise declarations into deterministic networking and typed-domain
-code. Generated files are compilation outputs; edit the declaration that produced them.
+RedEngine source generators derive deterministic networking and typed-domain code from concise
+declarations. Generated files are compilation outputs; make changes in their source declarations.
 
 ## Gameplay tags
 

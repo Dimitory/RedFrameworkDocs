@@ -1,38 +1,38 @@
 # Meet RedEngine
 
-RedEngine sits between a Unity game and Photon Fusion. It gives common multiplayer gameplay concepts a
-consistent home: application startup, world travel, actors, input, abilities, inventory, equipment,
-weapons, UI, content loading, and diagnostics.
+RedEngine provides a structured gameplay layer between a Unity project and Photon Fusion. It brings
+application startup, world travel, actors, input, abilities, inventory, equipment, weapons, UI, content
+loading, and diagnostics within a consistent architecture.
 
-The framework is opinionated where multiplayer code benefits from one clear rule. Replicated gameplay
-runs on Fusion ticks and respects authority, prediction, and rollback. Presentation is allowed to be
-ordinary Unity code as long as it does not become the source of network truth.
+Its central constraint is deliberate: replicated gameplay runs on Fusion ticks and observes authority,
+prediction, and rollback. Presentation may use ordinary Unity callbacks, provided it never determines
+authoritative network state.
 
-## The three ideas worth learning first
+## Three foundational concepts
 
-### A game has one application lifetime and changing world lifetimes
+### Application and world lifetimes differ
 
-`GameInstance` owns the application-level lifetime. A `World` belongs to the active Fusion simulation
-scene. Travelling to another scene replaces the world without pretending the whole application was
-restarted.
+`GameInstance` owns the application lifetime, while `World` belongs to the active Fusion simulation
+scene. Travelling to another scene replaces the world without restarting the application.
 
-### Networked things are actors
+### Networked entities are actors
 
-An `Actor` is a Fusion-aware object with a `NetworkObject`. Actor components add focused behavior. Spawn
-and despawn network actors through `World`, so the framework and Fusion agree on ownership and lifetime.
+An `Actor` is a Fusion-aware entity with a `NetworkObject`; actor components supply focused behavior.
+Spawn and despawn actors through `World` to preserve ownership and lifetime semantics.
 
 ### Input is data for a simulation tick
 
-The Input System feeds RedEngine's fixed input channels. Fusion transports those values, and gameplay
-code consumes them during the network simulation. This makes a button press reproducible during
-prediction and rollback instead of tying it to a rendered frame.
+The Input System populates RedEngine's fixed input channels. Fusion transports those values for
+consumption during simulation ticks, making input reproducible under prediction and rollback rather
+than dependent on rendered frames.
 
-## What RedEngine does not hide
+## Responsibilities retained by the project
 
-You still configure Fusion, create prefabs, author ScriptableObjects, and decide which side has state
-authority. RedEngine supplies a vocabulary and working modules; it does not turn multiplayer into a
-single "make networked" checkbox.
+Projects still configure Fusion, create prefabs, author ScriptableObjects, and define state authority.
+RedEngine supplies reusable modules and consistent conventions, while these architectural decisions
+remain explicit.
 
-That is why the sample matters. Use it as a map of real connections, then replace one piece at a time.
+The showcase illustrates those relationships in a working project. Examine its configuration before
+replacing individual components.
 
 Next: [Framework overview](framework-overview.md).

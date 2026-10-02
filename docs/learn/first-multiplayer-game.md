@@ -1,7 +1,7 @@
 # First Multiplayer Game
 
-Build the smallest complete RedEngine game: one arena, one game mode, one controller, and one playable
-character.
+This tutorial assembles a minimal playable RedEngine game with one arena, one game mode, a player
+controller, and a character.
 
 ::: info Execution model for this tutorial
 - **Authority** — State Authority admits the player, spawns the controller/character, and changes gameplay state.
@@ -32,8 +32,8 @@ public sealed class ArenaGameMode : GameModeBase
 ## 3. Prepare the player
 
 Create a `PlayerController` prefab and a `Character` prefab. Both must be spawnable Fusion network
-prefabs. Start by duplicating their showcase counterparts, then remove optional systems after the
-baseline works.
+prefabs. Duplicate their showcase counterparts initially; remove optional systems once the baseline
+works.
 
 ## 4. Connect input
 
@@ -47,9 +47,9 @@ public void Move(Vector2 value) => characterController.SetMovementInput(value);
 
 ## 5. Add a replicated objective
 
-Start with one authoritative action: entering a trigger applies damage, or interacting with a pickup
-adds an item. Test it with one peer, then two. Use Fusion network state and `TickTimer` for gameplay;
-do not use coroutines or wall-clock delays for replicated outcomes.
+Implement one authoritative action, such as applying damage on trigger entry or adding an item after
+pickup interaction. Verify it with one peer, then two. Use Fusion network state and `TickTimer` for
+gameplay; coroutines and wall-clock delays must not determine replicated outcomes.
 
 ## 6. Verify the complete loop
 
@@ -63,5 +63,5 @@ For the longer inspector-by-inspector version, see [Your First Multiplayer Scene
 For admission, spawn selection, match states, and respawning, see the
 [GameMode manual](../manual/game-mode.md).
 
-Next: choose a small task from [Recipes](recipes/index.md), then use
+Next: select a focused task from [Recipes](recipes/index.md), then use
 [Where to Go Next](where-to-go-next.md) to enter the Manual.

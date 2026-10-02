@@ -1,6 +1,7 @@
 # Reference
 
-Reference pages describe stable contracts rather than teaching a workflow.
+The Reference documents API contracts and fixed constraints. For implementation workflows, consult
+the [Manual](../manual/index.md).
 
 - [API Reference](api-reference.md) — assemblies and primary entry points.
 - [Configuration](configuration.md) — settings assets and lookup.
@@ -8,5 +9,3 @@ Reference pages describe stable contracts rather than teaching a workflow.
 - [Generated code](generated-code.md) — gameplay tags, network models, collections, and fragments.
 - [Limits](limits.md) — fixed capacities and operational constraints.
 - [Glossary](glossary.md) — RedEngine and Fusion terminology used throughout the docs.
-
-For task-oriented explanations, use the [Manual](../manual/index.md).

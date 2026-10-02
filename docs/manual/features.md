@@ -1,6 +1,7 @@
 # Features
 
-Start with the problem you are solving, not the assembly list.
+Select a system by the gameplay requirement it addresses. The assembly map becomes relevant once you
+know which capability your project needs.
 
 ## Build the game loop
 
@@ -32,15 +33,15 @@ Start with the problem you are solving, not the assembly list.
 - **Interaction** — scan, select, and activate authoritative world interactions. See
   [Interaction](interaction.md).
 
-## Give players things
+## Inventory and equipment
 
 - **Inventory** — replicate item stacks with slot or tetris layouts.
 - **Equipment** — bind inventory items to gameplay slots and granted abilities.
 - **Asset-backed definitions** — author deterministic items and other shared data as ScriptableObjects.
 
-Follow [Inventory](inventory.md) and [Equipment](equipment.md) for the full path.
+Consult [Inventory](inventory.md) and [Equipment](equipment.md) for the complete workflow.
 
-## Ship the experience
+## Presentation and infrastructure
 
 - **UI** — compose widgets, layers, screen stacks, windows, notifications, loading screens, and variable
   bindings. See [UI and Widgets](ui.md).

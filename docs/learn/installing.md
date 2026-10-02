@@ -1,7 +1,7 @@
 # Installing RedEngine
 
-RedEngine is distributed through the Unity Asset Store. Import it into the Unity project where you
-want to use the framework, then let Unity resolve and compile its package dependencies.
+RedEngine is distributed through the Unity Asset Store. Import it into the target Unity project and
+allow Unity to resolve and compile its package dependencies before configuring the framework.
 
 ## Before you begin
 
@@ -29,12 +29,26 @@ project.
 After compilation:
 
 1. open **Tools > RedEngine > Welcome**;
-2. confirm RedEngine appears in Package Manager;
-3. create or select `Assets/Resources/EngineSettings.asset` and explicitly add the module sections
-   required by the project;
-4. open the Fusion Network Project Config and confirm the App Id and peer mode.
+2. confirm the package files appear under `Assets/RedEngine`;
+3. use **Multiplayer Play Mode > Install** to add `com.unity.multiplayer.playmode` for virtual Editor players;
+4. use the **Addressables**, **Cinemachine**, and **Localization** steps in Welcome to install missing packages.
+   Addressables Groups opens after installation and can be reopened with **Open Groups**;
+5. use **Input & UI > Install Packages** in Welcome to install any missing Input System, Unity UI,
+   and TextMesh Pro packages together; then use **Import Essentials** in the same step if TMP
+   resources are missing;
+6. use **Build Scenes > Register Scenes** in Welcome to enable imported sample scenes in the active
+   Build Profile; use **Build Profiles** there to inspect their order and add your own scenes;
+7. use **Tools > RedEngine > Engine Settings** to select the active settings asset; the showcase
+   includes one, while a project without one gets `Assets/Resources/EngineSettings.asset` on demand;
+8. set **Single Peer** or **Multi Peer** in Welcome's Photon Fusion step, then open the Fusion
+   Network Project Config and confirm the App Id. Use **Multi Peer** to run two editor peers.
 
-Do not create multiple `EngineSettings` assets under `Resources`. RedEngine expects one default asset.
+The Welcome window reads each imported sample's `sample.json`: `scene` identifies the scene opened
+from the sample card, while `scenes` lists the scenes to include in the build. Scene registration
+preserves existing entries and their order.
+
+Use the menu command to edit the active asset. The showcase settings are named
+`ShowcaseEngineSettings`, so a project's own `EngineSettings` takes precedence when present.
 
 ## Assembly references
 

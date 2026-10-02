@@ -1,12 +1,12 @@
 # Getting Started
 
-The shortest useful introduction to RedEngine is not an API tour. It is a small multiplayer session
-running in the Unity Editor. This path gets you there first; architecture and customization come after.
+Begin with a working multiplayer session in the Unity Editor. This guide establishes a runnable
+baseline before examining architecture or customization.
 
 ## What you will have at the end
 
 - RedEngine imported from the Unity Asset Store;
-- the Compact Multiplayer Showcase imported;
+- the Compact Multiplayer Showcase available under `Assets/RedEngine/Samples/CompactShowcase`;
 - a valid Photon Fusion App Id and runner configuration;
 - a server and at least one client running through Fusion Multi-Peer;
 - a clear next step for building your own scene.
@@ -16,28 +16,30 @@ Allow about 20 minutes if Fusion is already installed.
 ## 1. Install the package
 
 Follow [Installing RedEngine](installing.md). When Unity finishes compiling, open
-**Tools > RedEngine > Welcome**. The welcome window is a quick health check: it links to the settings
-asset, Fusion configuration, documentation, and samples.
+**Tools > RedEngine > Welcome**. The welcome window provides a setup overview, installation buttons
+for Addressables, Cinemachine, and Localization when needed, and links to the settings asset, Fusion
+configuration, an optional Multiplayer Play Mode installer, Input System and UI package installation
+with TMP Essential Resources, build scene registration, documentation, and samples.
 
 ![Welcome window](/images/welcome-window.png)
 
-## 2. Import the showcase {#import-the-showcase}
+## 2. Open the showcase {#import-the-showcase}
 
-1. Open **Window > Package Manager**.
-2. Select **RedEngine Framework**.
-3. Open the **Samples** tab.
-4. Import **Compact Multiplayer Showcase**.
-5. Open the imported `Content/Scenes` folder.
+1. Open **Tools > RedEngine > Welcome**.
+2. Select **Open Scene** for **Compact Multiplayer Showcase**.
+3. Use **Show Folder** to browse its assets under `Assets/RedEngine/Samples/CompactShowcase`.
 
-The showcase is intentionally small enough to inspect. It is a better starting point than an empty
-scene because the important relationships—runner, game mode, controller, character, input, and UI—are
-already wired together.
+The showcase keeps the essential relationships visible: runner, game mode, controller, character,
+input, and UI are already configured as a working baseline.
 
 ## 3. Connect Fusion
 
 Set the Photon App Id in Fusion's project configuration. The sample installer updates the explicit
-sections in the single `Assets/Resources/EngineSettings.asset`, enables both showcase scenes in the
-active Build Profile, adds the sample assembly to Fusion Weaver, and selects Multi-Peer mode. It runs
+sections in the showcase's `Content/Resources/ShowcaseEngineSettings.asset` (or an existing
+`Assets/Resources/EngineSettings.asset`), adds the sample assembly to Fusion Weaver, and selects
+Multi-Peer mode. You can switch between **Single Peer** and **Multi Peer** in Welcome's Photon Fusion
+step. Use **Build Scenes > Register Scenes** in Welcome to enable both showcase scenes
+in the active Build Profile. The installer runs
 automatically when `EngineSettings` has no sections. In an already configured project, run
 **RedEngine > Samples > Configure Compact Showcase** to connect the sample. Re-running the command
 preserves existing preload labels, Addressables groups, gameplay tags, and logger settings.
@@ -47,12 +49,12 @@ preserves existing preload labels, Addressables groups, gameplay tags, and logge
 1. Right-click the **Fusion ×1** play control and choose **Start with 2 peer(s)**.
 2. Use the neighboring **Peer** menu during Play Mode to choose which peer receives input.
 
-You should be able to move both players, collect the weapon, fire, ride the moving platform, and see
-the same result from either peer. If only one peer responds, verify Peer Mode before debugging input.
+Both players should move, collect the weapon, fire, and ride the moving platform with consistent
+results across peers. If only one responds, verify Peer Mode before investigating input bindings.
 
 ## 5. Trace one action through the framework
 
-Pick a simple action—jump is a good one—and follow it in the imported sample:
+Trace a single action, such as jumping, through the showcase:
 
 1. the Input Actions asset produces an input value;
 2. `InputSettings` maps it to a fixed network input channel;
@@ -61,8 +63,8 @@ Pick a simple action—jump is a good one—and follow it in the imported sample
 5. a gameplay ability changes authoritative state;
 6. presentation code reacts to the replicated result.
 
-That path is the framework in miniature. Keep simulation state in the Fusion path; reserve ordinary
-Unity timing and callbacks for presentation work.
+This sequence illustrates the framework's separation of concerns. Keep simulation state on the Fusion
+path and reserve ordinary Unity timing and callbacks for presentation.
 
 ## Where to go next
 
@@ -72,7 +74,7 @@ Unity timing and callbacks for presentation work.
 - Understanding shared services: start from [Subsystems](../manual/subsystems.md)
 - Looking up a gameplay feature: start from [Features](../manual/features.md)
 
-## A quick troubleshooting pass
+## Troubleshooting checklist
 
 | Symptom | First thing to check |
 | --- | --- |

@@ -1,7 +1,7 @@
 # UI Sample
 
-The showcase demonstrates four UI paths: screen navigation, loading state, HUD variables, and world
-markers.
+The showcase demonstrates four UI workflows: screen navigation, loading state, HUD variables, and
+world markers.
 
 ## Screens and loading
 
@@ -21,9 +21,9 @@ SetVariable("inventoryCount", inventoryCount);
 SetVariable("ammoMagazine", weapon.AmmoInMagazine);
 ```
 
-The HUD's TMP strings use named placeholders such as `{health:0}` and `{ammoMagazine}`. The parent
-`Widget` automatically binds them to its variables. Replicated gameplay remains on the character
-and weapon; the widget owns no authoritative state.
+The HUD's TMP strings contain named placeholders such as `{health:0}` and `{ammoMagazine}`. The parent
+`Widget` binds them to its variables automatically. Replicated gameplay remains on the character and
+weapon; the widget holds no authoritative state.
 
 ## World markers
 

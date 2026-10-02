@@ -1,6 +1,6 @@
 # Framework Overview
 
-Here is the mental model to keep beside you while exploring the sample.
+This overview maps the framework's runtime responsibilities to the sample project.
 
 ## From launch to gameplay
 
@@ -40,9 +40,9 @@ deadline belongs in a networked `TickTimer`. `World.TimerManager`, Unity corouti
 
 ## Modules stay optional
 
-Assemblies are deliberately narrow. A project can use Core without Inventory, or Inventory without the
-authoring graph tools. Reference the smallest set you need; this keeps dependencies legible and avoids
-pulling editor APIs into runtime code.
+Assemblies have deliberately narrow responsibilities. Projects can use Core without Inventory, or
+Inventory without graph authoring tools. Reference only the required modules to keep dependencies
+explicit and editor APIs out of runtime code.
 
 Next: [Your first multiplayer scene](first-multiplayer-scene.md).
 

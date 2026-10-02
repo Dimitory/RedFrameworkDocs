@@ -3,8 +3,8 @@ layout: home
 
 hero:
   name: RedEngine
-  text: Multiplayer gameplay, without the mystery wiring
-  tagline: A Unity 6 framework built around Photon Fusion 2, tick-safe gameplay, and small focused modules.
+  text: A coherent foundation for multiplayer gameplay
+  tagline: A modular Unity 6 framework built on Photon Fusion 2, tick-driven simulation, and focused gameplay systems.
   actions:
     - theme: brand
       text: Get RedEngine on Asset Store
@@ -21,31 +21,31 @@ hero:
 
 features:
   - title: Learn
-    details: Start RedEngine, build your first multiplayer game, complete focused recipes, and choose the next system to study.
+    details: Configure RedEngine, build a first multiplayer game, and progress through focused implementation guides.
     link: /learn/
   - title: Manual
-    details: Understand Core, Networking, Input, gameplay modules, UI, and Assets one system at a time.
+    details: Examine the architecture, runtime behavior, and APIs of each gameplay and infrastructure module.
     link: /manual/
   - title: Samples
-    details: Run the Compact Multiplayer Showcase and follow focused ability, inventory, UI, and networking walkthroughs.
+    details: Explore the Compact Multiplayer Showcase through guided ability, inventory, UI, and networking examples.
     link: /samples/
   - title: Reference
-    details: Look up assemblies, configuration, annotations, generated code, fixed limits, and terminology.
+    details: Consult assembly boundaries, configuration, annotations, generated code, runtime limits, and terminology.
     link: /reference/
 ---
 
-## Choose how you want to read
+## Choose a starting point
 
-New to the framework? Follow **Learn** in order. Already building a game? Use the **Manual** by system.
-Open **Samples** when you need working connections, and **Reference** when you need an exact contract.
+Follow **Learn** for a guided introduction. Use the **Manual** when implementing a specific system,
+**Samples** to examine working integrations, and **Reference** for precise API contracts.
 
 [Learn](learn/index.md) · [Manual](manual/index.md) · [Samples](samples/index.md) ·
 [Reference](reference/index.md)
 
-Found a problem in the framework or this documentation? Open an issue in the
+To report a framework or documentation issue, use the
 [RedFrameworkDocs bug tracker](https://github.com/Dimitory/RedFrameworkDocs/issues).
 
 ::: info Current release
-RedEngine is in active development. Read the [1.0.0 Release Notice](release-notice.md) and
-[Planned Updates](planned-updates.md) before adopting it for a long-lived production branch.
+RedEngine remains under active development. Review the [1.0.0 Release Notice](release-notice.md)
+and [Planned Updates](planned-updates.md) before adopting it for a long-lived production branch.
 :::

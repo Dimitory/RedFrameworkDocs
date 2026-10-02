@@ -1,6 +1,7 @@
 # API Reference
 
-RedEngine is split into focused runtime assemblies. Reference only the modules used by your code.
+RedEngine divides runtime functionality among focused assemblies. Reference only the modules your
+code requires.
 
 | Assembly | Primary entry points |
 | --- | --- |

@@ -1,7 +1,7 @@
 # Tutorial: Your First Multiplayer Scene
 
-This tutorial describes the smallest useful scene of your own. Use the showcase prefabs as references
-while you build it; they expose the exact inspector relationships that text cannot show as clearly.
+This tutorial constructs a minimal custom multiplayer scene. Refer to the showcase prefabs while
+configuring it: their serialized references make the required inspector relationships explicit.
 
 ## 1. Create the global settings
 
@@ -51,8 +51,8 @@ The game mode needs a player controller and a character. Any spawnable network a
 `NetworkObject`, and network behaviors should derive from RedEngine's actor/component types where the
 framework owns their lifecycle. Register these prefabs in Fusion's network project configuration.
 
-For a first pass, duplicate the corresponding showcase prefabs and remove features you do not need.
-That gives you a known-good hierarchy before you customize movement, visuals, or abilities.
+Initially, duplicate the corresponding showcase prefabs and remove unnecessary features. This
+preserves a working hierarchy while you customize movement, visuals, and abilities.
 
 ## 4. Add input {#add-input}
 
@@ -89,9 +89,9 @@ peer.
 Add the gameplay scene to the active Build Profile and assign it in `CoreSettings`. Confirm every
 spawnable prefab is registered with Fusion. Then enter Play Mode with one peer first.
 
-Once one peer spawns correctly, enable Fusion Multi-Peer and try two. Verify both input paths before
-adding inventory, abilities, or weapons; a small working baseline makes later failures much easier to
-locate.
+Once one peer spawns correctly, enable Fusion Multi-Peer and verify two peers. Confirm both input
+paths before adding inventory, abilities, or weapons; this baseline makes subsequent failures easier
+to isolate.
 
 ## 6. Add one feature at a time
 

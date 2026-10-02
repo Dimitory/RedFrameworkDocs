@@ -1,8 +1,8 @@
 # Graph and Inspector
 
-These modules are building blocks for project-specific authoring tools. You do not need them to make a
-basic RedEngine game; add them when designers need graphs, richer inspectors, or reusable data-driven
-workflows.
+These modules support project-specific authoring workflows. Introduce them when designers require
+graphs, richer inspectors, or reusable data-driven tools; a basic RedEngine game does not depend on
+them.
 
 ## RedEngine.Graph
 

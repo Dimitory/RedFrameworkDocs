@@ -2,13 +2,13 @@
 
 ## Near-term focus
 
-- We plan to prepare a more comprehensive sample.
+- Develop a more comprehensive sample that demonstrates the framework in a fuller application flow.
 
 ## Planned development
 
-- We are preparing VisualGraph for the Ability System.
-- Add a full single-player mode that does not start a server.
-- Improve integration with the gameplay camera.
-- Add more ability and weapon examples.
+- Develop VisualGraph authoring for the Ability System.
+- Provide a complete single-player mode that does not start a server.
+- Improve gameplay camera integration.
+- Add further ability and weapon examples.
 - Integrate actors with `NetworkRigidbody`.
-- Expand UI examples and module features.
+- Expand the UI module with additional examples and capabilities.

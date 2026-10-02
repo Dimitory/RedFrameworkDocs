@@ -1,7 +1,7 @@
 # Where to Go Next
 
-After completing one or two [Recipes](recipes/index.md), choose the Manual page for the feature you are
-building.
+After completing one or two [Recipes](recipes/index.md), consult the Manual section that corresponds
+to your next implementation goal.
 
 | Goal | Continue with |
 | --- | --- |
@@ -22,5 +22,5 @@ building.
 | Configure log channels or custom receivers | [Manual: Diagnostics](../manual/diagnostics.md) |
 | Add typed runtime commands | [Manual: Developer Console](../manual/developer-console.md) |
 
-When you want to see several systems connected, switch to the [Samples](../samples/index.md). For exact
-contracts, annotations, generated members, and capacities, use the [Reference](../reference/index.md).
+Use [Samples](../samples/index.md) to examine interactions between systems. Consult
+[Reference](../reference/index.md) for exact contracts, annotations, generated members, and capacities.

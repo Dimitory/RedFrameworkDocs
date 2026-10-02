@@ -1,6 +1,7 @@
 # Ability Sample
 
-This walkthrough follows the framework `SprintAbility` used by the Compact Multiplayer Showcase.
+This walkthrough examines the framework's `SprintAbility` as implemented in the Compact Multiplayer
+Showcase.
 
 ## The complete loop
 
@@ -12,8 +13,8 @@ This walkthrough follows the framework `SprintAbility` used by the Compact Multi
 6. Releasing input, interruption, or reaching zero Stamina exits the loop.
 7. `finally` removes the speed bonus.
 
-The important detail is cleanup. Ability execution may end through several paths, so temporary
-movement state is restored in `finally` when the input is released or execution is interrupted.
+Cleanup must cover every exit path. The `finally` block restores temporary movement state whether
+input is released, execution is interrupted, or the ability ends for another reason.
 
 ```csharp
 while (!coroutine.Interrupted &&
@@ -28,5 +29,6 @@ while (!coroutine.Interrupted &&
 }
 ```
 
-Compare it with Jump, which has a fixed action and cooldown, and weapon fire/reload, which resolve the
-currently equipped `Weapon`. Then use [Manual: Abilities](../manual/abilities.md) to build your own.
+Compare it with Jump, which has a fixed action and cooldown, and with weapon fire and reload, which
+resolve the currently equipped `Weapon`. Consult [Manual: Abilities](../manual/abilities.md) before
+implementing a new ability.

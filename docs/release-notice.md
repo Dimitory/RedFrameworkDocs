@@ -2,7 +2,7 @@
 
 ## RedEngine 1.0.0
 
-Initial public release of RedEngine.
+RedEngine 1.0.0 is the framework's initial public release.
 
 ### Highlights
 
@@ -24,5 +24,6 @@ Initial public release of RedEngine.
    inventory, equipment, projectiles, and respawn.
 
 ::: warning API stability
-Module stability annotations describe current intent, not a promise that every public API is final.
+Module stability annotations describe the intended level of API maturity; they do not guarantee that
+every public contract is final.
 :::

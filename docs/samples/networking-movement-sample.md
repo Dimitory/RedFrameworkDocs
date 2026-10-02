@@ -1,6 +1,7 @@
 # Networking and Movement Sample
 
-The showcase provides a practical test bed for authority, prediction, and scene-isolated presentation.
+The showcase provides a reproducible environment for examining authority, prediction, and
+scene-specific presentation.
 
 ## Things to inspect
 
@@ -12,9 +13,9 @@ The showcase provides a practical test bed for authority, prediction, and scene-
 
 ## Verification exercise
 
-Run two peers and alternate the selected input peer. Ride the platform, cross ice, use a
-teleporter, and enter lava. Compare final positions and health from both peers. If they diverge, inspect
-whether the changed state is updated on Fusion ticks and owned by state authority.
+Run two peers and switch the selected input peer. Ride the platform, cross ice, use a teleporter, and
+enter lava. Compare final positions and health on both peers. If results diverge, confirm that the
+affected state changes on Fusion ticks under State Authority.
 
 Continue with [Manual: Spawn & Networking](../manual/spawn.md) and
 [Manual: Character Controller](../manual/character-controller.md).

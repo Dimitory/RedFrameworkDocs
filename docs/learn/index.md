@@ -1,7 +1,7 @@
 # Learn RedEngine
 
-This path is for your first contact with RedEngine. It starts with a working Unity project, builds one
-small multiplayer game, and then points you toward the system-specific manual.
+This sequence introduces RedEngine through a working Unity project and a small multiplayer game,
+then directs you to the relevant system guides.
 
 ## The learning path
 
@@ -16,5 +16,5 @@ small multiplayer game, and then points you toward the system-specific manual.
    time.
 8. [Where to Go Next](where-to-go-next.md) — choose the next system based on what you want to build.
 
-The Learn section is intentionally sequential. If you already have a running RedEngine project, use
-the [Manual](../manual/index.md) instead.
+Follow these pages in order when setting up a new project. For an existing RedEngine project,
+consult the [Manual](../manual/index.md) directly.
