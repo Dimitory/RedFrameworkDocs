@@ -18,6 +18,9 @@ hero:
     - theme: alt
       text: Report a bug
       link: https://github.com/Dimitory/RedFrameworkDocs/issues
+    - theme: alt
+      text: Live Demo
+      link: /demo
 
 features:
   - title: Learn

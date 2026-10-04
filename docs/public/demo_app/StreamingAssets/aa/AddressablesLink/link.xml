@@ -1,0 +1,129 @@
+<linker>
+  <assembly fullname="Fusion.Runtime, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="Fusion.NetworkObject" preserve="all" />
+    <type fullname="Fusion.NetworkObjectPrefabData" preserve="all" />
+    <type fullname="Fusion.NetworkObjectGuid" preserve="nothing" serialized="true" />
+    <type fullname="Fusion.NetworkString`1" preserve="nothing" serialized="true" />
+    <type fullname="Fusion._32" preserve="nothing" serialized="true" />
+  </assembly>
+  <assembly fullname="RedEngine.Gameplay.AbilitySystem, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="RedEngine.Gameplay.AbilitySystem.AbilitySystemComponent" preserve="all" />
+    <type fullname="RedEngine.Gameplay.AbilitySystem.Abilities.AbilityCommitSettings" preserve="nothing" serialized="true" />
+    <type fullname="RedEngine.Gameplay.AbilitySystem.Abilities.AbilityInputSettings" preserve="nothing" serialized="true" />
+    <type fullname="RedEngine.Gameplay.AbilitySystem.Abilities.AbilityInputTag" preserve="nothing" serialized="true" />
+    <type fullname="RedEngine.Gameplay.AbilitySystem.Abilities.AbilityPolicySettings" preserve="nothing" serialized="true" />
+    <type fullname="RedEngine.Gameplay.AbilitySystem.Abilities.DefaultAbilityProcessor" preserve="nothing" serialized="true" />
+    <type fullname="RedEngine.Gameplay.AbilitySystem.Attributes.AttributeReference" preserve="nothing" serialized="true" />
+    <type fullname="RedEngine.Gameplay.AbilitySystem.Attributes.AttributeValue" preserve="nothing" serialized="true" />
+    <type fullname="RedEngine.Gameplay.AbilitySystem.Effects.EffectContentSettings" preserve="nothing" serialized="true" />
+    <type fullname="RedEngine.Gameplay.AbilitySystem.Effects.EffectDurationSettings" preserve="nothing" serialized="true" />
+    <type fullname="RedEngine.Gameplay.AbilitySystem.Effects.EffectStackingSettings" preserve="nothing" serialized="true" />
+  </assembly>
+  <assembly fullname="RedEngine.Gameplay.Equipment, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="RedEngine.Gameplay.Equipment.EquipAbility" preserve="all" />
+    <type fullname="RedEngine.Gameplay.Equipment.UnequipAbility" preserve="all" />
+    <type fullname="RedEngine.Gameplay.Equipment.EntityFragmentEquipment" preserve="nothing" serialized="true" />
+    <type fullname="RedEngine.Gameplay.Equipment.EquipmentSlotTag" preserve="nothing" serialized="true" />
+  </assembly>
+  <assembly fullname="RedEngine.Gameplay.Interaction, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="RedEngine.Gameplay.Interaction.InteractAbility" preserve="all" />
+  </assembly>
+  <assembly fullname="RedEngine.Gameplay.Inventory, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="RedEngine.Gameplay.Inventory.ConsumeAbility" preserve="all" />
+    <type fullname="RedEngine.Gameplay.Inventory.ItemDefinition" preserve="all" />
+    <type fullname="RedEngine.Gameplay.Inventory.ItemScheme" preserve="all" />
+    <type fullname="RedEngine.Gameplay.Inventory.EntityFragmentAbilities" preserve="nothing" serialized="true" />
+    <type fullname="RedEngine.Gameplay.Inventory.EntityFragmentConsume" preserve="nothing" serialized="true" />
+    <type fullname="RedEngine.Gameplay.Inventory.EntityFragmentEffects" preserve="nothing" serialized="true" />
+    <type fullname="RedEngine.Gameplay.Inventory.EntityFragmentStack" preserve="nothing" serialized="true" />
+    <type fullname="RedEngine.Gameplay.Inventory.FragmentRule" preserve="nothing" serialized="true" />
+  </assembly>
+  <assembly fullname="RedEngine.Gameplay.Movement, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="RedEngine.Gameplay.Movement.CharacterJumpAbility" preserve="all" />
+    <type fullname="RedEngine.Gameplay.Movement.SprintAbility" preserve="all" />
+  </assembly>
+  <assembly fullname="RedEngine.Gameplay.Weapon, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="RedEngine.Gameplay.Weapon.DamageEffect" preserve="all" />
+    <type fullname="RedEngine.Gameplay.Weapon.ProjectileVisual" preserve="all" />
+    <type fullname="RedEngine.Gameplay.Weapon.ReloadAbility" preserve="all" />
+    <type fullname="RedEngine.Gameplay.Weapon.ThrowableWeapon" preserve="all" />
+    <type fullname="RedEngine.Gameplay.Weapon.WeaponFireAbility" preserve="all" />
+    <type fullname="RedEngine.Gameplay.Weapon.WeaponReloadAbility" preserve="all" />
+    <type fullname="RedEngine.Gameplay.Weapon.WeaponFireModeDefinition" preserve="nothing" serialized="true" />
+  </assembly>
+  <assembly fullname="RedEngine.Samples.CompactShowcase, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="RedEngine.Samples.CompactShowcase.ShowcaseBurningEffect" preserve="all" />
+    <type fullname="RedEngine.Samples.CompactShowcase.ShowcaseDamageNumberPresentation" preserve="all" />
+    <type fullname="RedEngine.Samples.CompactShowcase.ShowcaseHealthPotionEffect" preserve="all" />
+    <type fullname="RedEngine.Samples.CompactShowcase.ShowcaseSpeedPotionEffect" preserve="all" />
+  </assembly>
+  <assembly fullname="Unity.Addressables, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" preserve="all">
+    <type fullname="UnityEngine.AddressableAssets.Addressables" preserve="all" />
+    <type fullname="UnityEngine.AddressableAssets.ResourceProviders.NativeContentAssetListProvider" preserve="all" />
+  </assembly>
+  <assembly fullname="Unity.ResourceManager, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" preserve="all">
+    <type fullname="UnityEngine.ResourceManagement.ResourceProviders.AssetBundleProvider" preserve="all" />
+    <type fullname="UnityEngine.ResourceManagement.ResourceProviders.AtlasSpriteProvider" preserve="all" />
+    <type fullname="UnityEngine.ResourceManagement.ResourceProviders.BundledAssetProvider" preserve="all" />
+    <type fullname="UnityEngine.ResourceManagement.ResourceProviders.IAssetBundleResource" preserve="all" />
+    <type fullname="UnityEngine.ResourceManagement.ResourceProviders.InstanceProvider" preserve="all" />
+    <type fullname="UnityEngine.ResourceManagement.ResourceProviders.SceneProvider" preserve="all" />
+  </assembly>
+  <assembly fullname="Unity.TextMeshPro, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="TMPro.TextMeshProUGUI" preserve="all" />
+    <type fullname="TMPro.TMP_FontAsset" preserve="all" />
+    <type fullname="TMPro.FaceInfo_Legacy" preserve="nothing" serialized="true" />
+    <type fullname="TMPro.FontAssetCreationSettings" preserve="nothing" serialized="true" />
+    <type fullname="TMPro.KerningTable" preserve="nothing" serialized="true" />
+    <type fullname="TMPro.TMP_Character" preserve="nothing" serialized="true" />
+    <type fullname="TMPro.TMP_FontFeatureTable" preserve="nothing" serialized="true" />
+    <type fullname="TMPro.TMP_FontWeightPair" preserve="nothing" serialized="true" />
+    <type fullname="TMPro.VertexGradient" preserve="nothing" serialized="true" />
+  </assembly>
+  <assembly fullname="UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.GameObject" preserve="all" />
+    <type fullname="UnityEngine.Material" preserve="all" />
+    <type fullname="UnityEngine.MeshFilter" preserve="all" />
+    <type fullname="UnityEngine.MeshRenderer" preserve="all" />
+    <type fullname="UnityEngine.MonoBehaviour" preserve="all" />
+    <type fullname="UnityEngine.Object" preserve="all" />
+    <type fullname="UnityEngine.RectTransform" preserve="all" />
+    <type fullname="UnityEngine.Shader" preserve="all" />
+    <type fullname="UnityEngine.Texture2D" preserve="all" />
+    <type fullname="UnityEngine.Transform" preserve="all" />
+    <type fullname="UnityEngine.Color" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Color32" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Events.PersistentCallGroup" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.LayerMask" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Vector3" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Vector4" preserve="nothing" serialized="true" />
+  </assembly>
+  <assembly fullname="UnityEngine.TextRenderingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.Font" preserve="all" />
+  </assembly>
+  <assembly fullname="UnityEngine.UIModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.Canvas" preserve="all" />
+    <type fullname="UnityEngine.CanvasGroup" preserve="all" />
+    <type fullname="UnityEngine.CanvasRenderer" preserve="all" />
+  </assembly>
+  <assembly fullname="RedEngine.Assets">
+    <type fullname="RedEngine.Assets.AssetGuid" preserve="nothing" serialized="true" />
+    <type fullname="RedEngine.Assets.AssetReference`1" preserve="nothing" serialized="true" />
+    <type fullname="RedEngine.Assets.StaticAssetReferenceProvider" preserve="nothing" serialized="true" />
+  </assembly>
+  <assembly fullname="RedEngine.Gameplay.GameplayTags">
+    <type fullname="RedEngine.Gameplay.GameplayTags.TagRequirements" preserve="nothing" serialized="true" />
+  </assembly>
+  <assembly fullname="UnityEngine.TextCoreFontEngineModule">
+    <type fullname="UnityEngine.TextCore.FaceInfo" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.TextCore.Glyph" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.TextCore.GlyphMetrics" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.TextCore.GlyphRect" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.TextCore.LowLevel.GlyphAdjustmentRecord" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.TextCore.LowLevel.GlyphPairAdjustmentRecord" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.TextCore.LowLevel.GlyphValueRecord" preserve="nothing" serialized="true" />
+  </assembly>
+  <assembly fullname="UnityEngine.UI">
+    <type fullname="UnityEngine.UI.MaskableGraphic/CullStateChangedEvent" preserve="nothing" serialized="true" />
+  </assembly>
+</linker>

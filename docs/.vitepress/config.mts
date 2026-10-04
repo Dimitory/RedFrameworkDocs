@@ -28,6 +28,7 @@ export default defineConfig({
           { text: 'Changelog', link: '/changelog' },
           { text: 'Asset Store', link: 'https://assetstore.unity.com/preview/409964/1489558' },
           { text: 'Report a bug', link: 'https://github.com/Dimitory/RedFrameworkDocs/issues' },
+          { text: 'Demo', link: '/demo' },
         ],
       },
     ],

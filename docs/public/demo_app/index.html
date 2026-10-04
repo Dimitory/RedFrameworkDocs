@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0, user-scalable=no"
+    >
+
+    <title>RedEngine Demo</title>
+
+    <style>
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+
+            overflow: hidden;
+
+            background: #080b10;
+        }
+
+        #unity-container {
+            position: relative;
+
+            width: 100%;
+            height: 100%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #unity-canvas {
+            width: 100%;
+            height: 100%;
+
+            display: block;
+
+            background: #080b10;
+        }
+
+        #unity-loading {
+            position: absolute;
+            inset: 0;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            gap: 14px;
+
+            background: #080b10;
+
+            color: rgba(255, 255, 255, 0.65);
+
+            font-family:
+                Inter,
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                sans-serif;
+
+            font-size: 13px;
+        }
+
+        #unity-progress {
+            width: min(320px, 60vw);
+            height: 3px;
+
+            overflow: hidden;
+
+            background: rgba(255, 255, 255, 0.08);
+
+            border-radius: 999px;
+        }
+
+        #unity-progress-bar {
+            width: 0%;
+            height: 100%;
+
+            background: rgba(255, 255, 255, 0.8);
+
+            transition: width 0.15s ease;
+        }
+
+        #unity-error {
+            display: none;
+
+            position: absolute;
+            left: 24px;
+            right: 24px;
+            bottom: 24px;
+
+            padding: 12px 16px;
+
+            border-radius: 8px;
+
+            background: rgba(180, 40, 40, 0.9);
+
+            color: white;
+
+            font-family:
+                Inter,
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                sans-serif;
+
+            font-size: 13px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div id="unity-container">
+
+    <canvas
+        id="unity-canvas"
+        tabindex="-1"
+    ></canvas>
+
+    <div id="unity-loading">
+        <div>Loading RedEngine Demo...</div>
+
+        <div id="unity-progress">
+            <div id="unity-progress-bar"></div>
+        </div>
+    </div>
+
+    <div id="unity-error"></div>
+
+</div>
+
+<script>
+    const canvas = document.querySelector("#unity-canvas");
+    const loading = document.querySelector("#unity-loading");
+    const progressBar = document.querySelector("#unity-progress-bar");
+    const errorContainer = document.querySelector("#unity-error");
+
+    const buildUrl = "Build";
+    const loaderUrl = buildUrl + "/release-1.0.0.loader.js";
+
+    const config = {
+        dataUrl: buildUrl + "/release-1.0.0.data",
+        frameworkUrl: buildUrl + "/release-1.0.0.framework.js",
+        codeUrl: buildUrl + "/release-1.0.0.wasm",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "NORTH 35",
+        productName: "RedEngine Demo",
+        productVersion: "1.0.0"
+    };
+
+    function showBanner(message, type) {
+        console.log(message);
+
+        if (type === "error") {
+            errorContainer.textContent = message;
+            errorContainer.style.display = "block";
+        }
+    }
+
+    const script = document.createElement("script");
+
+    script.src = loaderUrl;
+
+    script.onload = () => {
+        createUnityInstance(
+            canvas,
+            config,
+            progress => {
+                progressBar.style.width =
+                    `${progress * 100}%`;
+            }
+        )
+        .then(instance => {
+            window.unityInstance = instance;
+            loading.style.display = "none";
+        })
+        .catch(error => {
+            console.error(error);
+
+            loading.style.display = "none";
+
+            errorContainer.textContent =
+                "Failed to start Unity WebGL.";
+
+            errorContainer.style.display = "block";
+        });
+    };
+
+    script.onerror = () => {
+        loading.style.display = "none";
+
+        errorContainer.textContent =
+            "Failed to load Unity WebGL loader.";
+
+        errorContainer.style.display = "block";
+    };
+
+    document.body.appendChild(script);
+</script>
+
+</body>
+</html>
